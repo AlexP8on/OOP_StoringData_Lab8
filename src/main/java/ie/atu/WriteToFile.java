@@ -8,10 +8,10 @@ public class WriteToFile {
         String fileName = "File13.txt";
 
 
-        try(FileWriter writer = new FileWriter(fileName)) {
+        try(FileWriter writer = new FileWriter(fileName, true)) {
 
 
-            writer.write("Content is written here");
+            writer.write("Train at 6:10pm");
             System.out.println("Content successfully added to file ");
         }
         catch(IOException e){
