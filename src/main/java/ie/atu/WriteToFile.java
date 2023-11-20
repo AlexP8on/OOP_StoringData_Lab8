@@ -2,16 +2,16 @@ package ie.atu;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 public class WriteToFile {
     public static void main(String[] args) {
         // Specify file name
         String fileName = "File13.txt";
 
 
-        try(FileWriter writer = new FileWriter(fileName, true)) {
+        try(PrintWriter writer = new PrintWriter(new FileWriter(fileName, true))) {
 
-
-            writer.write("Train at 6:10pm");
+            writer.println("This line will be formatted correctly ");
             System.out.println("Content successfully added to file ");
         }
         catch(IOException e){
