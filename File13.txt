@@ -1,1 +1,2 @@
 Content is written hereTrain at 18:10Train at 6:10pm
+This line will be formatted correctly 
